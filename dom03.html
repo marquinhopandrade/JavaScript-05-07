@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM01</title>
+</head>
+<body>
+    <h1>Me mude A com JS!</h1>
+    <div>A: <span>3</span></div>
+    <div>B: <span>2</span></div>
+    <div>C: <span>1</span></div>
+    <script>
+        console.log("Hello World!");
+        //busca uma referência para o primeiro elemento
+        const eSpans = document.querySelectorAll("span");
+        const eA = eSpans[0];
+        const eB = eSpans[1];
+        const eC = eSpans[2];
+
+        //opera os dados
+        const A = Number (eA.textContent);
+        const B = Number (eB.textContent);
+        const C = A+B;
+        //Escreva na saida
+        eC.textContent = C;
+    </script>
+
+</body>
+</html>
