@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM05</title>
+    <h1>DOM05</h1>
+    <ul></ul>
+</head>
+<body>
+
+    <script>
+        console.log("Hello World!");
+        //busca uma referência para o primeiro elemento
+        const eUl= document.querySelector("ul");
+        //opera os dados
+        for(let i = 0; i < 5; i++) {
+            const numero = 7+i;
+            const eLi = document.createElement("li");
+            eLi.textContent = numero;
+            eUl.appendChild(eLi);
+        }
+        //Escreva na saida
+
+    </script>
+
+</body>
+</html> 
