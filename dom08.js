@@ -12,20 +12,16 @@ const eImparList = eLists[1];
 
 function ehParListener(event){
     console.log("Eh par!")
-    criaElemento(true);
+    criaElemento(eParList);
 }
 function ehImparListener(event){
     console.log("Eh Impar!")
-    criaElemento(false);
+    criaElemento(eImparList);
 }
 function criaElemento(ehPar){
     const eLi = document.createElement("li");
     eLi.textContent = eValor.textContent;
-    if(ehPar === true){
-        eParList.appendChild(eLi);
-    } else {
-        eImparList.appendChild(eLi);
-    }
+    lista.appendChild(eLi);
     sorteiaValor();
 }
 function sorteiaValor() {
